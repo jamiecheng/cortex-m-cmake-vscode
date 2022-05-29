@@ -10,6 +10,11 @@ extern "C"
      */
     void system_init();
 
+    /**
+     * @brief Returns the tick count since bootup in milliseconds
+     * 
+     * @return uint32_t tick count [ms]
+     */
     uint32_t system_get_tick();
 
 #ifdef __cplusplus
