@@ -5,3 +5,8 @@ void system_init()
 {
     HAL_Init();
 }
+
+uint32_t system_get_tick()
+{
+    return HAL_GetTick();
+}

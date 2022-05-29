@@ -1,3 +1,5 @@
+#include "stdint.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -7,6 +9,8 @@ extern "C"
      *
      */
     void system_init();
+
+    uint32_t system_get_tick();
 
 #ifdef __cplusplus
 }
