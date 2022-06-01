@@ -17,6 +17,12 @@ extern "C"
      */
     uint32_t system_get_tick();
 
+    /**
+     * @brief Stops execution until an event occurs.
+     * 
+     */
+    void system_wait_for_event();
+
 #ifdef __cplusplus
 }
 #endif

@@ -1,9 +1,12 @@
 #include "delay.h"
+#include "system.h"
 
 void delay(uint32_t ms)
 {
-    for (uint32_t i = 0; i < ms; i++)
+    uint32_t tick_end = system_get_tick() + ms;
+
+    while(system_get_tick() < tick_end)
     {
-        __WFI();
+        system_wait_for_event();
     }
 }
