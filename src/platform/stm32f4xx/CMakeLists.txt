@@ -13,4 +13,5 @@ ${CMAKE_CURRENT_LIST_DIR}/stm32f4xx_hal_driver/Src/stm32f4xx_hal_cortex.c)
 
 # the hal lib
 set(SRC_FILES ${SRC_FILES} 
-${CMAKE_CURRENT_LIST_DIR}/system.c)
+${CMAKE_CURRENT_LIST_DIR}/system.c
+${CMAKE_CURRENT_LIST_DIR}/gpio.c)
