@@ -28,6 +28,8 @@ void delay(uint32_t ms)
 
     while(system_get_tick() < tick_end)
     {
+        volatile uint32_t t = system_get_tick();
+        
         system_wait_for_event();
     }
 }
